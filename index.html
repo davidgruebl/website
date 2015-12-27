@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>David Thomas Grübl</title>
+    <meta name="description" content="JavaScript engineer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Raleway);
+      body {
+        font-family: 'Raleway', sans-serif;
+        background-image: url('img/bg.png');
+      }
+      a {color: black;}
+      h1 {font-size: 36px;}
+      h2 {font-size: 26px;}
+      p {font-size: 19px;}
+      #description {
+        padding: 30px;
+        float: left;
+        max-width: 100vw;
+      }
+      #picture {
+        max-width: 100%;
+        max-height: 30vh;
+      }
+      #content {
+        margin: 60px 0;
+      }
+      @media screen and (min-device-width: 950px) and (min-device-height: 800px) {
+        #description {
+          padding: 30px;
+          margin: 60px;
+          height: 80vh;
+          width: 480px;
+          background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0));
+          background-image: -moz-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0));
+          background-image: -o-linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0));
+          background-image: linear-gradient(top, rgba(255,255,255,0.6), rgba(255,255,255,0));
+        }
+        #picture {
+          display: none;
+        }
+        #imgwrap {
+          width: 100vw;
+          height: 100vh;
+          background-image: url('img/dtg.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="imgwrap">
+      <section id="description">
+        <h1>David Thomas Grübl</h1>
+        <h2>JavaScript engineer</h2>
+        <img id="picture" src="img/dtg_zoom.jpg" alt="Image of David Thomas Grübl"/>
+        <section id="content">
+          <p>When traveling I publish pics on <a target="_blank" href="https://www.instagram.com/davidgruebl">instagram</a>.</p>
+          <p>Let me convince you that <a target="_blank" href="https://www.qualitance.com/blog/qualitalks-3-ideas-are-worth-nothing">Ideas are worth nothing</a>.</p>
+          <p>Find coverage of conferences I spoke at on <a target="_blank" href="http://lanyrd.com/profile/dtg">lanyrd</a>.</p>
+          <p>See my open source code on <a target="_blank" href="https://github.com/davidgruebl">github</a>.</p>
+          <p>Follow me on <a target="_blank" href="https://facebook.com/davidthomasgruebl">facebook</a> and <a target="_blank" href="https://twitter.com/davidgruebl">twitter</a>.</p>
+        </section>
+        </h2>
+      </section>
+    </section>
+    <script async>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-55003233-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>

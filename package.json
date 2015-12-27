@@ -1,0 +1,23 @@
+{
+  "name": "dtg-sexy",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:davidgruebl/website"
+  },
+  "author": {
+    "name": "David Thomas Grübl",
+    "email": "me@davidgruebl.com"
+  },
+  "scripts": {
+    "copy-img": "cp -r img/ dist/img",
+    "copy-robots":"cp robots.txt dist/",
+    "minify": "html-minifier --collapse-whitespace --minify-css --minify-js --lint --remove-comments --remove-comments-from-cdata ./index.html -o ./dist/index.html",
+    "prebuild": "rm -rf dist/ && mkdir dist",
+    "build": "npm run copy-img && npm run copy-robots && npm run minify",
+    "deploy": "rsync -rp --delete-after -e \"ssh -o StrictHostKeyChecking=no\" dist/ root@178.62.249.245:/var/www/dtg.sexy/html"
+  },
+  "devDependencies": {
+    "html-minifier": "^1.0.1"
+  }
+}
