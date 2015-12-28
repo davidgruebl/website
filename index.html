@@ -13,9 +13,12 @@
         background-image: url('img/bg.png');
       }
       a {color: black;}
-      h1 {font-size: 36px;}
-      h2 {font-size: 26px;}
-      p {font-size: 19px;}
+      h1 {font-size: 32px;}
+      h2 {font-size: 22px;}
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
       #description {
         padding: 30px;
         float: left;
@@ -26,9 +29,9 @@
         max-height: 30vh;
       }
       #content {
-        margin: 60px 0;
+        margin: 30px 0;
       }
-      @media screen and (min-device-width: 950px) and (min-device-height: 800px) {
+      @media screen and (min-width: 950px) and (min-height: 800px) {
         #description {
           padding: 30px;
           margin: 60px;
@@ -41,6 +44,9 @@
         }
         #picture {
           display: none;
+        }
+        #content {
+          margin: 60px 0;
         }
         #imgwrap {
           width: 100vw;
@@ -59,12 +65,9 @@
         <h2>JavaScript engineer</h2>
         <img id="picture" src="img/dtg_zoom.jpg" alt="Image of David Thomas Grübl"/>
         <div id="content">
-          <p>Let me convince you that <a target="_blank" href="https://www.qualitance.com/blog/qualitalks-3-ideas-are-worth-nothing">Ideas are worth nothing</a>.</p>
-          <p>When traveling I publish pics on <a target="_blank" href="https://www.instagram.com/davidgruebl">Instagram</a>.</p>
-          <p>Find coverage of conferences I spoke at on <a target="_blank" href="http://lanyrd.com/profile/dtg">Lanyrd</a>.</p>
-          <p>See my open source code on <a target="_blank" href="https://github.com/davidgruebl">Github</a>.</p>
-          <p>Follow me on <a target="_blank" href="https://facebook.com/davidthomasgruebl">Facebook</a> and <a target="_blank" href="https://twitter.com/davidgruebl">Twitter</a>.</p>
-          <p>Drop me a line: <a href="mailto:me@davidgruebl.com">me@davidgruebl.com</a>.</p>
+          <p>See my open source code on <a target="_blank" href="https://github.com/davidgruebl">Github</a> and let me convince you that <a target="_blank" href="https://www.qualitance.com/blog/qualitalks-3-ideas-are-worth-nothing">Ideas are worth nothing</a>.</p>
+          <p>Find coverage of conferences I spoke at on <a target="_blank" href="http://lanyrd.com/profile/dtg">Lanyrd</a> and pictures from my travels on <a target="_blank" href="https://www.instagram.com/davidgruebl">Instagram</a>.</p>
+          <p>Follow me on <a target="_blank" href="https://twitter.com/davidgruebl">Twitter</a> and <a target="_blank" href="https://facebook.com/davidthomasgruebl">Facebook</a> or drop me a line: <a href="mailto:me@davidgruebl.com">me@davidgruebl.com</a>.</p>
         </div>
       </div>
     </div>
