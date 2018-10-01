@@ -28,15 +28,16 @@
         max-width: 100%;
         max-height: 30vh;
       }
-      #content {
-        margin: 30px 0;
-      }
       @media screen and (min-width: 950px) and (min-height: 800px) {
         #description {
           padding: 30px;
           margin: 80px;
           height: 80vh;
           width: 400px;
+        }
+        #descriptioninner {
+          background:rgba(255,255,255,0.5);
+          padding: 20px;
         }
         #picture {
           display: none;
@@ -47,7 +48,7 @@
         #imgwrap {
           width: 100vw;
           height: 100vh;
-          background-image: url('img/DavidThomas.jpg');
+          background-image: url('img/dtgHike.jpg');
           background-size: cover;
           background-repeat: no-repeat;
         }
@@ -57,16 +58,18 @@
   <body>
     <div id="imgwrap">
       <div id="description">
+        <div id="descriptioninner">
         <h1>David Thomas Grübl</h1>
         <h2>JavaScript engineer</h2>
-        <img id="picture" src="img/DavidThomasZoom.jpg" alt="Image of David Thomas Grübl"/>
+        <img id="picture" src="img/dtgHike.jpg" alt="Image of David Thomas Grübl"/>
         <div id="content">
-          <p>Building mobile applications at <a target="_blank" href="https://prodigyai.com/">Prodigy A.I.</a></p>
+          <p>product & engineering</a></p>
           <p>See my open source code on <a target="_blank" href="https://github.com/davidgruebl">Github</a> and let me convince you that <a target="_blank" href="https://www.qualitance.com/blog/qualitalks-3-ideas-are-worth-nothing">Ideas are worth nothing</a>.</p>
           <p>Find coverage of conferences I spoke at on <a target="_blank" href="http://lanyrd.com/profile/dtg">Lanyrd</a> and pictures from my travels on <a target="_blank" href="https://www.instagram.com/davidgruebl">Instagram</a>.</p>
           <p>Get in touch via <a target="_blank" href="https://www.linkedin.com/in/davidgruebl/">LinkedIn</a> or drop me a line: <a href="mailto:me@dtg.sexy">me@dtg.sexy</a>.</p>
         </div>
       </div>
+    </div>
     </div>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
