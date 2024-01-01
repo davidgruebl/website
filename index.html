@@ -22,27 +22,48 @@
         font-size: 18px;
         line-height: 30px;
       }
-      #description {
-        padding: 30px;
-        float: left;
+      .container {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
       }
-      @media screen and (min-width: 950px) and (min-height: 800px) {
-        #description {
-          padding: 30px;
-          margin: 60px;
-        }
+      .photo {
+          width: 50%;
       }
+      .photo img {
+          max-height: 100vh;
+          max-width: 100vw;
+          display: block;
+      }
+      .description {
+          width: 50%;
+          padding-left: 20px; 
+      }
+    @media screen and (max-width: 950px) {
+      .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .description {
+        width: 100%;
+      }
+    }
     </style>
   </head>
   <body>
-      <div id="description">
-				<h1>David Thomas Grübl</h1>
-        <p>
-          <a target="_blank" href="https://www.linkedin.com/in/davidgruebl/">linkedin.com/in/davidgruebl</a>
-        </p>
-        <p>
-          <a href="mailto:me@davidgruebl.com">me@davidgruebl.com</a>
-        </p>
+      <div class="container">
+        <div class="photo">
+          <img src="dtg.jpg" alt="David Thomas Grübl in the office">
+        </div>
+        <div class="description">
+          <h1>David Thomas Grübl</h1>
+          <p>
+            <a target="_blank" href="https://www.linkedin.com/in/davidgruebl/">linkedin.com/in/davidgruebl</a>
+          </p>
+          <p>
+            <a href="mailto:me@davidgruebl.com">me@davidgruebl.com</a>
+          </p>
+        </div>
     </div>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
