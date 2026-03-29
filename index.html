@@ -4,66 +4,108 @@
     <meta charset="UTF-8">
     <title>David Thomas Grübl</title>
     <meta name="description" content="fintech enthusiast">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { height: 100%; }
+
       body {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #E7E3D9;
+        font-family: 'Inter', -apple-system, sans-serif;
+        background: #0c0c0c;
+        color: #d4d4d4;
       }
-      a {
-        color: black; 
-        text-decoration: none;
+
+      .page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
       }
-      h1 {font-size: 32px;}
-      h2 {font-size: 22px;}
-      p {
-        font-size: 18px;
-        line-height: 30px;
-      }
-      .container {
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-      }
+
       .photo {
-          width: 50%;
+        overflow: hidden;
       }
+
       .photo img {
-          max-height: 100vh;
-          max-width: 100vw;
-          display: block;
-      }
-      .description {
-          width: 50%;
-          padding-left: 20px; 
-      }
-    @media screen and (max-width: 950px) {
-      .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .description {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: grayscale(20%) contrast(1.05);
+        transition: filter 1.2s ease;
       }
-    }
+
+      .photo:hover img {
+        filter: grayscale(0%) contrast(1);
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 4rem;
+        gap: 1.5rem;
+        opacity: 0;
+        transform: translateY(24px);
+        animation: arrive 0.8s ease forwards 0.4s;
+      }
+
+      h1 {
+        font-weight: 200;
+        font-size: 2.4rem;
+        letter-spacing: 0.06em;
+        line-height: 1.3;
+        color: #e8e8e8;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.35);
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-weight: 300;
+        letter-spacing: 0.03em;
+        width: fit-content;
+        transition: color 0.3s;
+      }
+
+      a:hover { color: #fff; }
+
+      @keyframes arrive {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (max-width: 768px) {
+        .page {
+          grid-template-columns: 1fr;
+          grid-template-rows: 55vh auto;
+        }
+        .info {
+          padding: 2rem 2rem 3rem;
+          justify-content: flex-start;
+        }
+        h1 { font-size: 1.7rem; }
+      }
     </style>
   </head>
   <body>
-      <div class="container">
-        <div class="photo">
-          <img src="dtg-statue.png" alt="David Thomas Grübl in the office">
+    <div class="page">
+      <div class="photo">
+        <img src="dtg.jpg" alt="David Thomas Grübl">
+      </div>
+      <div class="info">
+        <h1>David Thomas<br>Grübl</h1>
+        <div class="links">
+          <a target="_blank" href="https://www.linkedin.com/in/davidgruebl/">LinkedIn</a>
+          <a href="mailto:me@dtg.sexy">me@dtg.sexy</a>
         </div>
-        <div class="description">
-          <h1>David Thomas Grübl</h1>
-          <p>
-            <a target="_blank" href="https://www.linkedin.com/in/davidgruebl/">linkedin.com/in/davidgruebl</a>
-          </p>
-          <p>
-            <a href="mailto:me@dtg.sexy">me@dtg.sexy</a>
-          </p>
-        </div>
+      </div>
     </div>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
