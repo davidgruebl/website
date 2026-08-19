@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "(www\\.)?dtg\\.sexy" }],
+      "destination": "https://davidgruebl.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www\\.davidgruebl\\.com" }],
+      "destination": "https://davidgruebl.com/:path*",
+      "permanent": true
+    }
+  ]
+}
