@@ -2,15 +2,15 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "(www\\.)?dtg\\.sexy" }],
-      "destination": "https://davidgruebl.com/:path*",
+      "destination": "https://davidgruebl.com/$1",
       "permanent": true
     },
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www\\.davidgruebl\\.com" }],
-      "destination": "https://davidgruebl.com/:path*",
+      "destination": "https://davidgruebl.com/$1",
       "permanent": true
     }
   ]
